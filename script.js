@@ -8,7 +8,7 @@ let photosArray = [];
 
 // Unsplash API
 const count = 30;
-const apiKey = 'aN5Wd7rPU1wO8T1q-pX71CQQMbsnZ0EabQNykTsweJM';
+const apiKey = "aN5Wd7rPU1wO8T1q-pX71CQQMbsnZ0EabQNykTsweJM";
 const apiUrl = `https://api.unsplash.com/photos/random?client_id=${apiKey}&count=${count}`;
 
 // Check if all images were loaded
@@ -46,6 +46,7 @@ function displayPhotos() {
       alt: photo.alt_description,
       title: photo.alt_description,
     });
+    // console.log(photo.urls.regular);
     // Event Listener, check when each is finished loading
     img.addEventListener("load", imageLoaded);
     // Put <img> inside <a>, then put both inside imageContainer Element
